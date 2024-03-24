@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+<body>
+    <h1>Login Form</h1>
+    <form action="">
+        <p>
+            <input id="name"  type="text" placeholder="Enter your Name">
+        </p>
+        <p>
+            <input id="password" type="password" placeholder="Enter your Password">
+        </p>
+        <p>
+            <input onclick="myFunction()" type="submit" value="Login">
+        </p>
+    </form>
+</body>
+
+<script>
+    function myFunction(){
+    let name = document.getElementById("name").value;
+    let password =document.getElementById("password").value;
+    if(!name || !password){
+            alert("Your Name and Password is Empty")
+            }else{
+                if(name=="ko ko" || password == "123")
+                {
+                    window.location="home.html"
+                    alert("Your Login Successful")
+                    
+                }
+                else{
+                    alert("Your username and password is Wrong")
+                }
+            }
+    }
+</script>
+</html>
